@@ -1,0 +1,69 @@
+# ============================================================================
+# Journal Club Assistant — Configuration
+# ============================================================================
+# Edit this file to customize which journals you scan, what keywords to
+# filter by, and how far back to search.
+
+# ── Journals to scan ────────────────────────────────────────────────────────
+# Each entry needs a human-readable name and the journal's ISSN.
+# You can find ISSNs on the journal's website or at https://portal.issn.org
+journals:
+  - name: "Stem Cell Reports"
+    issn: "2213-6711"
+  - name: "Nucleic Acids Research"
+    issn: "1362-4962"
+  - name: "The EMBO Journal"
+    issn: "1460-2075"
+  - name: "EMBO Reports"
+    issn: "1469-3178"
+  # Add more journals below:
+  # - name: "Journal Name"
+  #   issn: "XXXX-XXXX"
+
+# ── Keywords / Research Interests ───────────────────────────────────────────
+# Papers whose title or abstract contain ANY of these keywords (case-insensitive)
+# will be included in the results. All others are filtered out.
+keywords:
+  - "chromatin"
+  - "epigenetics"
+  - "transcription"
+  - "histone"
+  - "3D chromatin"
+  - "Hi-C"
+  - "ATAC-seq"
+  - "ChIP-seq"
+  - "DNase-seq"
+  - "HiChIP"
+  - "Hi-C"
+  - "CRISPR"
+  - "Cas9"
+  - "gene editing"
+  - "genome editing"
+  - "CRISPR-Cas9"
+  - "development"
+  - "stem cell"
+  - "differentiation"
+  - "pluripotency"
+  - "organoid"
+  - "tissue engineering"
+  - "regenerative medicine"
+  - "cell fate"
+  - "cell identity"
+  - "cell plasticity"
+  - "cell reprogramming"
+  - "cell differentiation"
+  - "cell fate"
+  - "cell identity"
+  - "cell plasticity"
+  - "cell reprogramming"
+  # Add your keywords below:
+  # - "your keyword"
+
+# ── Search Duration ─────────────────────────────────────────────────────────
+# How many days back to search for new papers (from today).
+search_days: 30
+
+# ── Email (recommended) ────────────────────────────────────────────────────
+# Providing your email puts you in CrossRef's "polite pool" for faster,
+# more reliable API access. This is optional but strongly recommended.
+email: ""
