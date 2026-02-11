@@ -47,3 +47,18 @@ This will build a Docker image (first run only), fetch papers, and walk you thro
 2. Filters papers whose title or abstract match any of your keywords
 3. Presents each paper interactively — you decide **keep** or **skip**
 4. Saves only your accepted papers to a date-stamped CSV file
+
+## Updating
+
+When a new version is available, open Terminal, go to the project folder, and run:
+
+```bash
+cd JournalClubAssistant
+git pull
+docker rmi journal-club-assistant
+./run.sh
+```
+
+- `git pull` downloads the latest code from GitHub
+- `docker rmi journal-club-assistant` removes the old Docker image so it gets rebuilt with the updates
+- `./run.sh` rebuilds and runs as usual
