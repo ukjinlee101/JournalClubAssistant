@@ -1,4 +1,5 @@
 """CrossRef API client for fetching recent journal papers."""
+from __future__ import annotations
 
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta

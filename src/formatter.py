@@ -1,4 +1,5 @@
 """Output formatting — Rich console tables, CSV export, and Markdown export."""
+from __future__ import annotations
 
 import csv
 from datetime import datetime
