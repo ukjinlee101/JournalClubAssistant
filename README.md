@@ -6,9 +6,24 @@ Scan your favorite academic journals for recently published papers, filter by yo
 
 ### 1. Install Docker
 
+Docker is a tool that packages this application with everything it needs to run, so you don't have to worry about installing Python or any dependencies. It works the same on every Mac.
+
 Download and install Docker Desktop: [https://docs.docker.com/desktop/setup/install/mac-install/](https://docs.docker.com/desktop/setup/install/mac-install/)
 
-### 2. Edit `config.yaml`
+After installing, **open Docker Desktop** and wait for it to start (you'll see the whale icon in your menu bar).
+
+### 2. Download this repository
+
+Open **Terminal** (search for "Terminal" in Spotlight) and run:
+
+```bash
+git clone https://github.com/ukjinlee101/JournalClubAssistant.git
+cd JournalClubAssistant
+```
+
+This downloads the project to your computer. You only need to do this once.
+
+### 3. Edit `config.yaml`
 
 Add your journals (name + ISSN), keywords, and search duration:
 
@@ -26,7 +41,7 @@ search_days: 30
 
 You can find ISSNs on the journal's website or at [portal.issn.org](https://portal.issn.org).
 
-### 3. Run
+### 4. Run
 
 ```bash
 ./run.sh
