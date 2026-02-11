@@ -21,6 +21,7 @@ if command -v docker &> /dev/null && docker info &> /dev/null 2>&1; then
     docker run --rm -it \
         -v "$SCRIPT_DIR/config.yaml:/app/config.yaml:ro" \
         -v "$SCRIPT_DIR:/app/output" \
+        -w /app/output \
         "$IMAGE_NAME" "$@"
     exit $?
 fi
